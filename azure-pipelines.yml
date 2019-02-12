@@ -1,5 +1,8 @@
 jobs:
   - job: Windows_VS2017_x86
     pool:
-      vmImage: 'ubuntu'
+      vmImage: 'ubuntu-16.04'
     steps:
+    - bash: sudo apt-get install autoconf automake libtool transfig wget patch texinfo ant make openjdk-7-jdk faketime
+    - bash: wget https://dl.google.com/android/repository/android-ndk-r19-linux-x86_64.zip
+      
