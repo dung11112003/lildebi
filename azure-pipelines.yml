@@ -13,7 +13,7 @@ jobs:
     - script: export NDK_PLATFORM_LEVEL=23
     - script: export NDK_ABI=arm
     - script: export NDK_COMPILER_VERSION=4.6
-    - script: exxport HOST=x86
+    - script: export HOST=x86
     - script: make -C external assets
     - script: ./setup-ant
     - script: ant debug
