@@ -1,1 +1,5 @@
-
+jobs:
+  - job: Windows_VS2017_x86
+    pool:
+      vmImage: 'ubuntu'
+    steps:
