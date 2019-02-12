@@ -1,5 +1,5 @@
 jobs:
-  - job: Build Lil' Debi
+  - job: Build_Lil_Debi
     pool:
       vmImage: 'ubuntu-16.04'
     steps:
