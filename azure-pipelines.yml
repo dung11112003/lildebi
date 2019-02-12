@@ -1,9 +1,11 @@
 jobs:
-  - job: Windows_VS2017_x86
+  - job: Build Lil' Debi
     pool:
       vmImage: 'ubuntu-16.04'
     steps:
     - script: sudo apt-get update
     - script: sudo apt-get install autoconf automake libtool transfig wget patch texinfo ant make openjdk-8-jdk faketime
     - script: wget https://dl.google.com/android/repository/android-ndk-r19-linux-x86_64.zip
+    - script: unzip android-ndk-r19-linux-x86_64.zip
+    - script: cd
       
